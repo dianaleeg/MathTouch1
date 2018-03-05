@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--MathTouch-->
@@ -18,24 +17,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="Browse" translatesAutoresizingMaskIntoConstraints="NO" id="512-lX-cpp">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="Browse" translatesAutoresizingMaskIntoConstraints="NO" id="512-lX-cpp">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="512-lX-cpp" secondAttribute="height" multiplier="150:11" id="37N-dI-JKN"/>
-                                    <constraint firstAttribute="height" constant="44" id="KKb-wc-xLM"/>
-                                    <constraint firstAttribute="width" constant="600" id="WYe-yQ-dtG"/>
-                                </constraints>
                                 <items>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="N6O-56-G7X"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="xoI-yp-GAk"/>
                                     <barButtonItem title="Edit" id="7ro-QM-TEt"/>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="4UQ-rm-a28"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sQA-gs-HH8"/>
                                     <barButtonItem title="Save" id="x04-0N-wga"/>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="eJ5-wt-fCK"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="txg-pF-fa7"/>
                                     <barButtonItem title="Browse" id="adA-cV-cHz"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="MQk-AI-GUN"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="lcN-xT-9eF"/>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="512-lX-cpp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AhP-Kq-CJz"/>
+                            <constraint firstItem="512-lX-cpp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E8m-is-PfM"/>
+                            <constraint firstItem="512-lX-cpp" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="NHv-Df-jXQ"/>
+                            <constraint firstItem="512-lX-cpp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RkG-cp-x23"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="E8m-is-PfM"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="MathTouch" id="g1e-ch-u6q">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="ENO-wN-4si"/>
